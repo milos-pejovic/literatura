@@ -1,0 +1,156 @@
+
+===========================================================
+	WooCommerce
+===========================================================
+
+* Cloud9
+	* ctrl + e - Shortcut za pronadji metodu
+	
+	* dasni klik na fajlove
+		* open terminal
+		* download
+	
+===========================================================
+	CSS
+===========================================================
+
+* responsive, header, footer, ... Avada -> theme options
+
+* Slavko ne koristi nested columns
+
+* Page -> template 100% posto ima elemenata koji treba da budu 100%
+
+* Sirinu sajta (Avada -> theme options -> ...) bi postavio na 1100px;
+
+* Prvi kontejner 100% width background slika -> edit slike full size.
+
+* Element separator za visinu slike. Stavi se ispod/iznad YOUR HOST OF RECORD.
+	Separator se koristi kad treba da se gadja samo small/medium/large screen
+
+* FIND A DOMAIN - za custom css
+
+* Ikonice - Element checklist - list item
+
+* Social -> Avada -> theme options -> social media
+
+* Globalni custom css -> Avada -> theme options -> nadji custom css.
+
+===========================================================
+	WooCommerce Sajt na Latinici
+===========================================================
+
+* WPML - ok za dvojezicno. Sa vise jezika ume da dosta uspori.
+
+* Ako je sajt samo na srpskom jeziku (latinica) tri stvari uradiiti:
+	* Settings general -> site language -> Serbian
+		WP ce prebaciti na cirilicu
+		Jedan od nacina da se dobije latinica je da se preuzme domace izdanje WP-a. 
+		https://sr.wordpress.org/
+		
+	* U srp varijanti WP-a:	u okviru plugins foldera ima fajl "srlatin.php" ubacis ga u plugins folder.
+
+* Korisnici -> jezik izaberes jezik. Ovako moze da bude sajt na ENG, a admin na SRB.
+
+* WooCommerce. Svi prevodi WP-a i Tema mogu da se urade u folderu /wp-content languages/ (mora da se aktivira u administarciji neki drugi jezik da bi bilo foldera languages)
+* U zavisnosti od toga sta prevodimo pravimo folder
+	* folder /plugins/woocommerce
+	
+C:\wamp64\www\wptest\wp-content\plugins\woocommerce\i18n\languages	
+	
+* Svi noviji kvalitetniji pluginovi imaji .pot fajl
+	
+upotrebi woocommerce.pot
+fajl mora da bude nazvan woocommerce-sr_RS.pot
+On ovako zna da je to za srb.
+
+============================================
+
+.pot je radni fajl od koga se dobijaju .po .mo
+.pot -> .po i .mo
+.pot se edituje pa se prebacuje u po i mo
+
+============================================
+
+OVO JE CASE SENSITIVE
+
+Ide u folder languages/plugins/woocmmerce-sr_RS.po
+Ide u folder languages/plugins/woocmmerce-sr_RS.mo
+Ide u folder languages/themes/Avada-sr_RS.po
+Ide u folder languages/themes/Avada-sr_RS.mo
+
+OVO JE CASE SENSITIVE - END
+
+Postoje po i .. editori online
+
+* PO Editor za Windows	
+https://poedit.net/
+
+* Elementi teme. Iz foldera tema Avada uzemmo 
+Avada
+
+============================================
+
+Da ne bi prevodili seo WooCommerce
+
+* idi na translate WP 
+https://translate.wordpress.org/
+
+* Izaberes jezik
+* Izaberes sta prevodis
+* export oba fajla i .po i .mo
+* Skines .mo 
+
+Oni idu u wp-content/languages/plugins/myfile.mo
+rename u 
+woocommerce-sr_RS.mo
+woocommerce-sr_RS.po
+
+============================================
+
+* Avada ce neke delove pregaziti pa ce svejedno osativit na eng. 
+Uradimo prevod i Avade na isti nacin kao za woocommerce.
+
+============================================
+
+WPML - mozes da izaberes prevod da cuva u bazi ili fajlu. Za obe opcije ima bar jedan upit u bazu. Mora da upita bazu kako je setovano.
+
+============================================
+
+Po Google dobar standard ucitavanje strane do 250ms.
+
+============================================
+
+App: https://poedit.net/
+OnLine: https://localise.biz/free/poeditor
+WP Prevodi se preuzimaju odavde:
+https://translate.wordpress.org/
+
+
+==============================================================
+==============================================================
+	Multisite
+==============================================================
+==============================================================
+
+* Dokumentacija 
+https://codex.wordpress.org/Create_A_Network
+
+* u wp-config.php se doda linija... (pri vrhu)
+
+* Ako se stavi linija bice Networks... u adminu.
+
+* Moguce je napraviti da korisnik moze da registruje Frotend i da sam napravi svoj sajt.
+
+* Ako superuser uradi network aktivate na plugin, na pojedinacnim sajtovima nec emoci da uradi NI deactivate NI uninstall.
+
+* Isto i sa temamama, ali superuser moze da podesi da neki sajt koristi neku drugu temu.
+
+* Superuseru mozemo da dodelimo rolu admin nekog sajta da bi on mogao da na tom sajtu pojedinacno radi sa pluginovima. 
+	NPR svi sajtovi koriste neki plugin, ali superuser kome je dodeljen admin sa site1 na site1 iskljuci taj plugin.
+
+
+========================================================
+	Asana - za deljenje taskova
+========================================================
+
+

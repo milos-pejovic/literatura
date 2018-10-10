@@ -1,0 +1,8 @@
+* URL za skidanje git-a
+http://git-scm.com
+
+* Default settings recommended
+
+* Installation
+	* "Use Git from Git Bash only" recommended
+	* "Checkout Windows-style, commit Inux-style line endings"

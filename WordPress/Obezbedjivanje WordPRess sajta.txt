@@ -1,0 +1,36 @@
+* WordPress Security Pluginovi
+	* wordfence
+	* IThemeSecurity
+
+* Sve update stalno
+	
+WP CLI
+Kad se radi update mozda pravi snapshotove
+
+Cache stavi
+W3total cahce
+WPcupercache
+
+
+* Backup - 
+akiba
+
+
+
+
+
+u index.phprequire( dirname( __FILE__ ) . '/wp-blog-header.php' );
+stavi da vuce od negde drugde "wp-blog-header.php"
+
+* Obavezno ugasiti xmlrpc.php - u rootu sajta.
+U wordfence pluginu ima ova opcija.
+
+* Ove teme valjaju
+	* AVADA - brza on enfold
+	* ENFOLD
+
+* Za WP multilenguage
+	* Vidi sa SPiderom, 
+	
+	
+	

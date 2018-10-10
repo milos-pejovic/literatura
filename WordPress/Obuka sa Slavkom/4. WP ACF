@@ -1,0 +1,27 @@
+
+==========================================================
+	Advanced Custom Fields - ACF
+==========================================================
+
+* Documentation link
+https://www.advancedcustomfields.com/
+
+* Glavni RTE se najcesce koristi za glavni sadrzaj zbog SEO jer se koristi i u feedovima.
+
+* TAB-ovi
+	* Custom fields mogu da se organizuju da u editu posta kome pripadaju budu prikazana po tabovima.	
+	* Prilikom pravljenja polja definisemo TAB name u meniju za pravljenje polja.
+	* Sva polja definisana posle tog taba ce pripadati tom tabu. (sva polja do narednog taba)
+	
+* Repeater fileds
+	* Moze lista da se pravi
+	* Primer:
+		* Za hotel za sadrzaj, repreater koji ima naslov i tekst.	
+	* Vidi za primernu repeatera za dodavnjae pravila....
+
+* Kondiciona polja - Conditional logic
+	* Npr ako je vrednost nekog polja X, priakzi i jos neka polja.
+	
+* Na dnu ima za stil kalse, id itd.
+
+* Moze da se definise da bude prikazano kao Metabox ili kao standarna custom fields.

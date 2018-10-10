@@ -1,0 +1,49 @@
+Pitanja
+za WordPress
+
+==============================================================
+
+* Plugin za backup?
+
+==============================================================
+
+* Instaliran je kupljeni WPML. Prikazuje se ovo:
+
+To easily translate Avada, you need to add the following WPML components:
+WPML Translation Management 
+WPML String Translation
+
+==============================================================
+
+Instalirao sam ove dve ext, ali sad nece da aktivira "WPML's Translation Editor," (ADimn -> WPML -> languages)
+
+* Tema - Avada je instalirana, ali trazi registraciju. Izgleda da radi i bez toga?
+	* Mozda nece moci da se update
+
+==============================================================
+	
+flush_rewrite_rules();
+
+https://developer.wordpress.org/plugins/the-basics/activation-deactivation-hooks/
+
+Kad ovo treba raditi?
+
+==============================================================
+
+escaping output
+
+==============================================================
+
+Zasto umesto filtera ne bi jednostavno koristili funkciju definisanu u datom scope-u?
+Da bi ta (filter) funkcija bila dostupna globalno?
+
+===============================================================
+
+* Kada u URL ukucamo myProject.com/wp-admin otvori se BE login iako postoji direktorijum wp-admin. (ako ukucamo myProject.com/wp-admin/css otvori se taj folder). Kako ovo radi? routing?
+===============================================================
+
+* U wp-config.php u ABSPATH se koristi '/'. Video sam da postoji razlika izmedju Windowsa i Linuxa u upotrebi slash-eva. (DIRECTORY_SEPARATOR)
+
+===============================================================
+
+* U formama, kako tacno funkcnionise nonce?

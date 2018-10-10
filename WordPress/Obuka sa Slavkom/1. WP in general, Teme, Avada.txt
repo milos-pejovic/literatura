@@ -1,0 +1,199 @@
+Ponedeljak
+2.4.2018.
+
+===========================================================
+	WordPress
+===========================================================
+
+* WP Meetup
+	* WP Meetup nije los, pogledaj. 
+	Poslednji bio u Novom Sadu, tema bila optimizacija brzine WP.
+
+===========================================================
+	Server
+===========================================================
+
+* Server na kome cemo raditi razvoj wordpressa.
+osmweb.wordpress.in.rs
+
+* Na serveru radni folder 
+public_html - za http
+public_shtml - za https
+
+===========================================================
+	Instalacija WP-a - Command line tool
+===========================================================
+
+* Postoji alat WP command line.
+https://wp-cli.org/
+
+* WP moze da se instalira preko komandne linije
+
+* Install command - Komanda za wp install. Instalira se cela struktura WP fajlova.
+wp core download
+
+* Jezik - Ima komanda da se doda da bude na nekom jeziku (npr sr)
+
+* Poddomen - Kada se instalira WP na okruzenje za razvoj, valja insalirati ga na poddomen. U protivnom permalinkovi mogu da prave problem.
+
+===========================================================
+	Struktura foldera
+===========================================================
+
+* Ne diramo. Tu je CORE. Prilikom update ovo bude pregazeno.
+wp-admin
+wp-includes
+
+* WP codex Izmene se rade po WP codexu. (vidi https://codex.wordpress.org/)
+
+* TRI stvari smemo da diramo/menjamo u WP instalaciji.
+	* WP content 
+		* plugins - ne dirati 3rd party plugins zbog update-a. (menjas samo svoje pluginove)
+	* wp_config.php
+	* .htaccess
+	
+===========================================================
+	Struktura foldera
+===========================================================	
+	
+* Kad su svi fajlovi snimljeni, treba pokrenuti instalaciju WP. 
+Pristupi se projektu preko linka i pokrenuce se install.
+
+* table prefix - Nije lose promeniti prefix tabele. (defualut wp_)
+	
+* Ako izaberemo "Discourage crawers from idnexing site" u source ce se ubaciti: 
+no index
+no follow
+	
+==============================================================
+	Rad sa WP
+==============================================================
+
+* No comments for pages 
+	* Po codexu nije da se radi comments na Page. Samo na Post-ove.
+
+==============================================================
+	Pluginovi
+==============================================================
+
+* Slavko koristi samo 10-ak plaginova. 
+	* SEO
+	* Visejezicnost
+	* Slider
+	* iThemes Security - Slavko koristi
+		* Moze da sakrije default login link
+		* Wordfence je sporiji od ovog.
+		* Wordfence moze da radi skeniranje baze ako ti je sajt vec zarazen, npr ako neki postovi povlace skripte. WF moze u tom slucaju da bude dobar.
+	
+* Pluignovi:
+	* WP Mail Bank: WordPress SMTP Plugin & Email Logs - kacenje preko API-ja.
+	* Contact form 7
+	* WPML
+	* Advances Custom Fields
+	* WooCommerce	
+	* "User Role Editor" plugin za Roles
+	* iThemes Security
+	* Ultra Admin - Za custom admin deo
+	* Gravity form - Za naprednije contact forme
+	
+* "User Role Editor" plugin za Roles
+https://wordpress.org/plugins/user-role-editor/
+Dozvoljava da definismo da li role ima pristup i koje (create, read, edit) i na cemu.
+Dobro za srednje i vece sajtove (npr jedan user samo unosi, a samo neki menadzer moze da menja cenu)	
+	
+==============================================================
+	Teme
+==============================================================	
+	
+* Teme
+	* Slavko koristi samo Avadu.
+	* Lakse je nauciti jednu kompleksnu temu, strukturu fajlova itd.
+	* Defaultne (twentyseventeen isl) teme nisu lose u smislu da se vidi struktura fajlova, sta je po WP codexu.
+	
+* Instalacija teme, nacini
+	* Preko WP (Appearance -> add new Theme)
+		* Mana - Cesto server ima ograniceno vreme/memeory pa moze da pukne.
+	* Preko FTP-a.
+	
+* Link za (custom) teme i pluginove
+	* developer.wordpress.org
+	* Saznas kako razviti custom plugin ili temu.
+	* Saznas o gotovim temama kako da iskoristis gotovu funckiju ili mogucnost teme ili plugina.
+	
+* DVE stvari bitne kod install teme.
+	* Folder glavne teme
+	* Folder child teme
+	
+* Tema, izmene, child tema
+	* Ako koristis neku temu, ali trebaju izmene, pravis Child temu. 
+	* Fajlove parent teme ne menjamo jer se updateom brisu izmene.
+	* Nazivu teme se doda "-child". Npr folder teme "twentyseventeen-child".
+	* Da bi povezali child i parent temu u style.css fajlu child teme se na vrhu doda komentar:
+
+Template: /naziv parent teme/
+Sve ostale linije mozemo da promenimo.
+
+* Dva osnovna fajla u temi su:
+functions.php
+style.css	
+
+==============================================================
+	Avada
+==============================================================
+	
+* Avada
+	* Kod install trazi jos dva plugina.
+	* Text domain za Avadu je "avada".
+	
+* Fusion patcher
+	* Kad ima nesto novo za Avadu ponekad samo naprave patch pa ga primenis odavde.
+	Da ne bi stalno pravili nove verzije.
+	
+==============================================================
+	Pravljenje sajta
+==============================================================
+	
+* Celokupno podesavnje ide iz "Theme options".
+	
+* Avada dozvoljava da se mnogo toga odradi bez koda, samo iz administarcije teme.
+	* npr - navigacija (mobilni, mega meni...)
+	* Responsive (brakepoint...)
+	* Vise vrsta headera ili radimo custom, sticky header
+	* Logotipi
+	* footer, sidebar
+	
+* Homepage Praksa
+	* Naslovna strana - Napravi Page pa ga nazovi "naslovna strana".
+	* developer.wordpress.org -> template hierarchy - kako gaziti fajlove/template.
+	https://developer.wordpress.org/files/2014/10/wp-hierarchy.png
+	
+* Podesavanje koja ce strana da bude homepage
+	* Appearance -> customizer -> homepage settings
+	* Settings -> reading
+
+* Avada - Dodavanje sadrzaja
+	* Content - stvari rade preko "Containera"
+	* Izaberes container (50% 50%, 33% 33% 33%, 25% 75%...)
+	* Unutar containera biras sadrzaj. Avada daje vec predefinisane neke opcije (slika, button, youtube link..).
+	* Snimanje - Mozes snimiti neki kontainer pa ga koristiti.
+	* Globalno cuvanje - Isti kontainer na vise mesta. Promenis jednom, izmenjeno na svim mestima.
+	* Avada ima svoj slider. Kad treba Revolution slider uzmi plugin.
+	* Svaka strana moze da se customizuje (npr header samo na jednoj strani da bude drugaciji). Idi u "Fuison page options"
+	* Moze da se snimi podesavanje strane.
+	* Featured image - Avada po defaultu daje 5 featured image, ali ovo moze da se podoesi na vise ili manje.
+	* Custom css za tu stranu na edit strane.
+	* Custom css za sve idi na Avada -> theme options -> ... 
+	
+* Na kraju razvoja sajta Slavko iskljuci sve ono sto nije potrebno (checkliste, Google mape). Tako se ne povlace nepotrebni fajlovi i malo se ubrzavaju performance sajta. Fusion builder -> Settings.
+
+* Praksa je da se u POST ne koriste Builder elemetni. Kod Page-a koristi builder elements.
+
+* WP pruza da se izabere format posta. Dodaje neke css klase. 
+
+==============================================================
+	Razno
+==============================================================
+	
+* Extend licenca - Ako hoces da ukljucis neciji proizvod u svoju temu.
+npr Avada sadrzi Advanced Custom Fields
+

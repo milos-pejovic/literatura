@@ -1,0 +1,34 @@
+==============================================================================
+ WP Security skripta
+==============================================================================
+
+* Plugin
+	* Wordfence Security
+		https://wordpress.org/plugins/search/wordfence/
+	* Moze i plugin "iThemes Security"
+	
+* Login link
+	* Da se izmeni wo-admin i wp-login u neki drugi link.
+	* Wordfence Security ima opciju za ovo. - NADJI OPCIJU
+	
+* Fajl xmlrpc.php
+	* Ugasiti ovaj fajl u rootu sajta.
+	* Wordfence Security ima opciju za ovo. - NADJI OPCIJU
+
+* Update
+	* Sve stalno na update najnoviju verziju (wp core, tema i pluginovi).
+	* Moze u autoupdater plugin.
+	* Auto Updateer primer
+		https://wordpress.org/plugins/companion-auto-update/
+
+* Fajl index.php - 
+	* Postoji linija: require( dirname( __FILE__ ) . '/wp-blog-header.php' );
+	* Premestiti sve osim index.php u neki fodler (myFolder)
+	*	Izmeniti liniju u require( dirname( __FILE__ ) . '/myFolder/wp-blog-header.php' );
+	* Postaviti da se folderu myFolder ne moze pristupiti preko neta (npr rpeko .htaccess)
+		
+* Fajl readme		
+	* Postoji postupak da se brise readme (pise verzija WP-a).
+
+* Admin account
+	* Postoji postupak da se izbrise admin account.

@@ -1,0 +1,86 @@
+
+=========================================================
+ Adeco
+=========================================================
+
+* Pitanja
+	* Koje podatke i filtere imaju za unose?
+	* Da li im je filtracija potrebna u offline? (da?)
+
+* Plugin za offline:
+https://wordpress.org/plugins/static-html-output-plugin/
+
+
+=========================================================
+ Rent A Chale
+=========================================================
+
+* Plugin za booking a placanje
+	* PinPoint Booking System Pro ~ $80
+	* Redizajn kalendara moze biti zahtevan - napomenuti dizajneru da se prilagodi.
+	
+* WooCommerce booking 
+	* Laksa primena dizajna
+	* Vise opsicja placanja
+
+=========================================================	
+	
+* Git Premium WordPress	
+	* URL: https://github.com/wp-premium
+	* Moze da se nadje dosta stavri koemrcijalni 
+	* Moze da se skine...
+	* Legalno jer je open source
+	* Primer: WPML, ACF Pro 
+	* Pogledaj Gravity form
+	
+=========================================================	
+
+* Plugin generator
+https://wppb.me/
+
+=========================================================	
+	Gravity form
+=========================================================	
+
+https://www.gravityforms.com/
+
+* Ima predefinisana mnoga polja
+
+* Custom polja.
+
+* Shortcodovi
+
+* Gravity form ima svoje CSS klase.
+
+* Dozvoljava pravljenje dodatnih akicja i filtera.
+	* Ako hocemo dodatnu opciju placanja.
+
+* before_subbmit, after_subbmit, autocomplete, payments..
+
+* gform_enque_script
+* gform_deque..._script
+	
+	
+	
+=========================================================	
+	Pravlenje pluginova
+=========================================================	
+
+* Sajt, pravi plugin skelet:
+https://wppb.me/
+
+* Vecina dobrih pluginova ima hookove za svoje glavne ackije. Preko njih mozes da nadogradjujes funkcionalnost tih pluginova u svojim pluginovima.
+
+* Avada i WooCommerce su otisli i dalje u tome. Oni su po fajlovima posatvili pozive na prazne funckije (npr. do action after main container). Ti posle definises kod za tu funkc().
+
+* Custom kod u pluginu:
+Postoje dva foldera
+admin i plugin
+
+Tamo ide custom klase. Mozes u tim fodlerima da dodas folder `includes` za custom stvari.
+Posle se te funckije/klase registurju u glavnom fajlu plugina.
+
+
+================================================
+Sajt za kopirati
+https://mediatemple.net/

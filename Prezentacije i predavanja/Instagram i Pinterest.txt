@@ -1,0 +1,36 @@
+Prezentacije - Algoritmi drustvenih mreza.
+13.12.2017
+
+**********
+** Nesa **
+**********
+
+** Instagram **
+
+* Brendirani hashtagovi. 
+
+* 80% korisnika Instagrama prati bar jedan business.
+
+* Instagram je pripojen sa Facebook-om, reklamiranje???
+
+* 70% postova na Instagramu niko ne vidi. Zbog promene algoritma.
+
+* Ljudi koje pratimo postuju. Nama se ne prikazuje sve vec samo najpopularnije i sa najvise lajkova.
+
+* Slike na instagramu stvaraju 36% vise engagement-a neko video.
+
+* Slike sa licima imaju 38% vise lajkova od onih bez lica.
+
+** Pinterest **
+
+* Po korisniku $58.95 potrosenih.
+
+* Vise nego Facebook i Instagram zajedno.
+
+* 80% zene.
+
+* Moze se pretvoriti u shop.
+
+* Sandwiching
+
+* !!! "Pareto" distribucija !!!

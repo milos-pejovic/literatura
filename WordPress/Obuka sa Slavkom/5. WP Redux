@@ -1,0 +1,83 @@
+
+==========================================================
+	Tutorials
+==========================================================
+
+* YouTube tutorial
+https://www.youtube.com/watch?v=E0BtIruDsx4
+
+==========================================================
+	Redux Framework
+==========================================================
+	
+* Link:
+https://reduxframework.com/
+https://wordpress.org/plugins/redux-framework/
+
+* Plugin, Funkcionise slicno kao ACF, ali sluzi za definisanje opcija tema ili plugina.
+	
+* Tim opcijama se posle moze pristupiti na dva nacina:
+	* Preko samog plugina
+	* Appearance -> customize
+	
+* Veci broj tema na Themeforestu koristi Redux jer kupac teme moze da cutomize-uje veliki broj stvari. 
+
+* Info o Reduxu kad se instalira: Tools -> Redux Framework
+
+* Ima opciju import/export. Na ovaj nacin se exportuju podesavnja teme i njihove vrednosti.
+	
+==========================================================
+	Redux Build
+==========================================================	
+	
+* Link:
+https://build.reduxframework.com/wp-admin
+
+* Potrebni su kredencijali. Nalog se pravi na
+https://build.reduxframework.com
+
+* Sluzi da se napravi blanko Custom tema
+
+* Dobije se Theme options i blanko tema (undescores)
+	
+* Podesiti podesavanja u tabovima...	
+	
+* "Use TGM Plugin Activation" - imas svoj pluign i hoces da korisniku kaze "Za ovu temu vam je potreban i ovaj plugin"
+
+* Nivoi "obaveznosti teme"
+	* Obavezna
+	* Savetuje se
+	* Tema ukljucuje plugin (u nekom folderu)
+https://build.reduxframework.com/wp-login.php?redirect_to=/wp-admin/admin.php?page=_options&tab=0
+	
+* Require / Embed Redux
+	* Da li ce i kako Redux biti includovan u temu koja se urpavo pravi.	
+
+* Ovako klijentu saljemo tri fajla:
+	* Tema - Zapakujemo folder teme
+	* Podesavanja ("ime teme" options -> import/export)
+	* Sadrzaj (Tools -> Export)
+	
+==========================================================
+	Redux Embed
+==========================================================
+
+* Framework moze kao plugin da se instalira, ali klijentu je ovo komplikovano.
+* Bolje je da se u temu ubace core fajlovi plugina. U Temi npr folder admin stavis core fajlove plugina?.
+
+* Kako embedovati Redux u temu ili plugin
+https://docs.reduxframework.com/core/advanced/embedding-redux-into-your-theme-or-plugin/
+
+==========================================================
+	Rad sa opcijama
+==========================================================
+
+* Opcije koje definisemo se cuvaju u Folderu themes/folder-teme/admin/options-init.php
+
+* Prikaz polja u template-u.
+	U Fajlu options-init.php ima podesavanje $opt_name = "naziv_globalne_promenjive";
+	Treba nam vrednost tog stringa.
+	U Templateu posle kucamo:
+	
+	$options = get_option('naziv_globalne_promenjive');
+	echo $options['id__moje_opcije'];
